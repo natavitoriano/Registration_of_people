@@ -1,55 +1,112 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header-title{
+    position: absolute;
+    margin: -18px 0px 0px 20px;
+    top: 50%;
+}
+
+.menu-bar{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    margin-left: -155.92px;
+    margin-top: -9px;
+}
+
+.menu-bar li{
+    display: inline-block;
+}
+
+.menu-bar a{
+    font-size: 20px;
+    padding: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: #D9C6B9;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.menu-bar li :hover{
+    background-color: #9C8E84;
+    color: white;
 }
 
 header{
-    grid-area: header;
-    border: solid 4px black;
-}
-
-nav{
     position: -webkit-sticky;
     position: sticky;
-    grid-area: navigation;
     top: 0px;
-    opacity: 50%;
-    border: solid 4px black;
+    grid-area: header;
 }
 
 main{
     grid-area: main;
-    border: solid 4px black;
 }
 
 footer{
     grid-area: footer;
-    border: solid 4px black;
 }
 
 body{
+    height: 100%;
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px 1fr 100px;
+    grid-template-rows: 100px 1fr 80px;
     grid-template-areas: 
         'header'
-        'navigation'
         'main'
         'footer';
 }
 
-@media(max-width: 700px) {
+@media screen and (max-width: 920px){
+    .header-title{
+        display: none;
+    }
+}
+
+@media screen and (max-device-width: 700px){
+   
+}
+
+@media screen and (max-width: 700px) {
     body {
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 1fr 100px;
+        grid-template-rows: 80px 1fr 80px;
         grid-template-areas:
-            'navigation'
+            'header'
             'main'
             'footer';
     }
 
-    header {
-        display: none;
+    .menu-bar a{
+        padding: 20px;
+    }
+
+    .menu-bar{
+        left: 0%;
+        margin-left: 20px;
     }
 }
+
+@media screen and (max-device-width: 700px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 1fr 80px;
+        grid-template-areas:
+            'header'
+            'main'
+            'footer';
+    }
+
+    .menu-bar a{
+        padding: 16px;
+    }
+}
+

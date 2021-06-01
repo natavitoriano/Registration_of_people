@@ -1,18 +1,16 @@
-#main-color{
-    color: #59514C;
+.main-color{
     background-color: #59514C;
+    background: #59514C;
 }
 
-#secundary-color{
-    color: #9C8E84;
+.secundary-color{
     background-color: #9C8E84;
 }
 
-#terciary-color{
-    color:#D9C6B9;
+.terciary-color{
     background-color: #D9C6B9;
 }
 
-#font-color{
+.font-color{
     color: #59514C;
 }
