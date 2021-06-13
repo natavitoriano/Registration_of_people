@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Register and control</title>    
@@ -14,8 +15,9 @@
                     <div class="header-title">
                         <h1 class="font-header-title">Register and control</h1>
                     </div>
-                    <button class="btn-header">
-                        <span class="material-icons">list</span>
+                    <button id="btn-header" class="btn-header">
+                        <span id="icon-close" class="material-icons-outlined icon-close">close</span>
+                        <span id="icon-menu" class="material-icons-outlined icon-menu">menu</span>
                     </button>
                     <nav class="menu-bar">
                         <ul>
@@ -36,6 +38,10 @@
             </main>
             <footer class="main-footer">
             </footer>
+            <nav id="hidden-menu" class="menu-small-device">
+
+            </nav>
     </div>
+    <script type="text/javascript" src="js/register.js"></script>
     </body>
 </html>
