@@ -36,7 +36,6 @@ header{
     align-items: center;
     margin: .8rem;
     width: 100%;
-    background-color: var(--black-low);
 }
 
 .font-header-title{
@@ -46,7 +45,7 @@ header{
 }
 
 .btn-header{
-    background-color: var(--black-low);
+    background-color: var(--black);
     border: none;
 }
 
@@ -114,8 +113,37 @@ main{
     height: 100%;
     width: 100%;
     position: fixed;
-    background-color: var(--black);
+    background-color: var(--black-low);
     display: none;
+}
+
+.menu-small-device ul{
+    margin: 0rem 2rem 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.menu-small-device ul li{
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.menu-small-device ul a{
+    font-size: 2.4rem;
+    color: var(--grey-blue);
+    padding: 1rem;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    background: rgb(30,30,30);
+    background: linear-gradient(90deg, rgba(30,30,30,1) 59%, rgba(0,0,0,1) 100%);
+    border-radius: 0.5rem;
+}
+
+.menu-small-device ul a:hover{
+    color: var(--white);
+    border-left: solid 0.5rem var(--green-darker-secundary);
+    background: var(--black);
 }
 
 @media (min-width: 576px) {  }
@@ -125,16 +153,13 @@ main{
     .menu-bar{
         display: block;
     }
-
     .btn-header{
         display: none;
     }
  }
 
 
-@media (min-width: 992px) { 
-    
- }
+@media (min-width: 992px) {  }
 
 
 @media (min-width: 1200px) {  }
