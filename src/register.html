@@ -1,23 +1,87 @@
-<div class="container-register">
-    <form class="container-form" action="#">
-        <div class="container-name">
-            <label class="label-register">Name</label><span class="span-register">*</span><br/>
-            <input type="text" class="input-register input-register-name" maxlength="50"/><br/>
-        </div>
-        <div class="container-email">
-            <label class="label-register">Email</label><span class="span-register">*</span><br/>
-            <input type="email" class="input-register input-register-name" maxlength="50"/><br/>
-        </div>
-        <div class="container-country">
-            <label class="label-register">Country</label><span class="span-register">*</span><br/>
-            <input type="text" class="input-register input-register-name" maxlength="50"/><br/>
-        </div>
-        <div class="container-city">
-            <label class="label-register">City</label><span class="span-register">*</span><br/>
-            <input type="text" class="input-register input-register-name" maxlength="50"/><br/>
-        </div>
-        <div class="container-submit">
-            <button class="btn-submit">SUBMIT</button>
-        </div>
-    </form>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register and control</title>    
+    </head>
+    <body>
+        <div class="container-main">
+            <header>
+                <div class="header-flex">
+                    <div class="header-title">
+                        <h1 class="font-header-title">Register and control</h1>
+                    </div>
+                    <button id="btn-header" class="btn-header">
+                        <span id="icon-close" class="material-icons-outlined icon-close">close</span>
+                        <span id="icon-menu" class="material-icons-outlined icon-menu">menu</span>
+                    </button>
+                    <nav class="menu-bar">
+                        <ul>
+                            <li>
+                                <a class="menu-bar-link" href="../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="menu-bar-link" href="../src/register.html">Register</a>
+                            </li>
+                            <li>
+                                <a class="menu-bar-link" href="../src/control.html">Control</a>
+                            </li>
+                        </ul> 
+                    </nav> 
+                </div> 
+            </header>
+            <main id="content">
+                <div id="container-register" class="container-register">
+                    <form id="form-register" class="container-form" action="/" method="POST" Content-Type="application/x-www-form-urlencoded">
+                        <div class="container-name">
+                            <label class="label-register">Name</label><span class="span-register">*</span><br/>
+                            <input id="register-name" type="text" class="input-register input-register-name" maxlength="50" name="name"/><br/>
+                            <h3 id='register-message-name' class='register-message-failed name-empty'>Please fill in the name field!</h3>
+                        </div>
+                        <div class="container-email">
+                            <label class="label-register">Email</label><span class="span-register">*</span><br/>
+                            <input id="register-email" type="email" class="input-register input-register-name" maxlength="50" name="email"/><br/>
+                            <h3 id='register-message-email' class='register-message-failed email-empty'>Please fill in the email field!</h3>
+                        </div>
+                        <div class="container-country">
+                            <label class="label-register">Country</label><span class="span-register">*</span><br/>
+                            <input id="register-country" type="text" class="input-register input-register-name" maxlength="50" name="country"/><br/>
+                            <h3 id='register-message-country' class='register-message-failed country-empty'>Please fill in the country field!</h3>
+                        </div>
+                        <div class="container-city">
+                            <label class="label-register">City</label><span class="span-register">*</span><br/>
+                            <input id="register-city" type="text" class="input-register input-register-name" maxlength="50" name="city"/><br/>
+                            <h3 id='register-message-city' class='register-message-failed city-empty'>Please fill in the city field!</h3>
+                        </div>
+                        <div class="container-submit">
+                            <button class="btn-submit" type="submit">SUBMIT</button>
+                        </div>
+                    </form>
+                    <h2 id="register-message" class="register-message"></h1>
+                </div>                
+            </main>
+            <footer  class="main-footer">
+            </footer>
+            <nav id="hidden-menu" class="menu-small-device menu-display-none">
+                <ul>
+                    <li>
+                        <a class="menu-small-device-link" href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="menu-small-device-link" href="src/register.html">Register</a>
+                    </li>
+                    <li>
+                        <a class="menu-small-device-link" href="src/control.html">Control</a>
+                    </li>
+                </ul> 
+            </nav>
+    </div>
+    <script type="text/javascript" src="../js/register.js"></script>
+    </body>
+</html>
+
+
