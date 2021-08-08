@@ -4,7 +4,7 @@
 <h2 align="center">Status do projeto</h2>
 <p align="center">🚧 Projeto em construção... 🚧</p>
 
-<h2 align="center">Features</h2>
+### Features
 - [x] Criação de site responsivo
 - [x] Cadastro de usuário
 - [x] Retorno de usuários cadastrados
