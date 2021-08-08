@@ -15,10 +15,10 @@
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [MongoDB]
-- [Node.js]
-- [CSS]
-- [HTML]
-- [JavaScript]
+- MongoDB
+- Node.js
+- CSS
+- HTML
+- JavaScript
 
 
