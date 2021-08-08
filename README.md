@@ -11,6 +11,10 @@
 - [ ] Edição de dados
 - [ ] Exclusão de dados
 
+### Pré-requisitos
+
+Antes de tudo você deve verificar se tem Node.js e MongoDB instalados.
+
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
