@@ -11,7 +11,7 @@
 - [ ] Edição de dados
 - [ ] Exclusão de dados
 
-### Pré-requisitos
+### Pré-requisitos e como rodar a aplicação
 
 Antes de tudo você deve verificar se tem Node.js e MongoDB instalados.
 
