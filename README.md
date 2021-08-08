@@ -11,3 +11,14 @@
 - [ ] Edição de dados
 - [ ] Exclusão de dados
 
+### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [MongoDB]
+- [Node.js]
+- [CSS]
+- [HTML]
+- [JavaScript]
+
+
