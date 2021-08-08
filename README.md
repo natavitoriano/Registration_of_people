@@ -15,6 +15,11 @@
 
 Antes de tudo você deve verificar se tem Node.js e MongoDB instalados.
 
+- Instalar todas as dependências do back-end na pasta NodeAPI.
+- Startar seu MongoDB.
+- Inicie o back-end em NodeAPI/src/index.js
+- Após isso o site já está pronto para uso, comece de ./index.html
+
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
