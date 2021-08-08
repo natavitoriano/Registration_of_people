@@ -39,6 +39,21 @@ header{
     width: 100%;
 }
 
+table, td, th {
+    border: 0.1rem solid var(--grey-blue);
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 1.5rem;
+    background-color: var(--green-darker);
+    color: var(--white);
+}
+
+td {
+    font-size: 1.3rem;
+}
+
 .font-header-title{
     color: var(--white);
     font-weight: normal;
@@ -189,7 +204,6 @@ main{
     height: 70%;
 }
 
-
 .container-name{
     grid-area: container-name;
 }
@@ -297,6 +311,16 @@ main{
     .input-register{
         width: 50rem;
     }
+
+    th {
+        font-size: 1.8rem;
+        background-color: var(--green-darker);
+        color: var(--white);
+    }
+    
+    td {
+        font-size: 1.5rem;
+    }
  }
 
 
@@ -309,6 +333,16 @@ main{
     }
     .menu-display-block{
         display: none;
+    }
+
+    th {
+        font-size: 2.3rem;
+        background-color: var(--green-darker);
+        color: var(--white);
+    }
+    
+    td {
+        font-size: 2rem;
     }
  }
 
